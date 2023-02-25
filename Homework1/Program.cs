@@ -16,7 +16,7 @@ else
 */
 
 // 2. Напишите программу, которая принимает на вход три числа и выдает максимальное из этих чисел.
-
+/*
 Console.Write("Input a first number: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input a second number: ");
@@ -36,3 +36,18 @@ int max = Max (number1, number2, number3);
 // Console.WriteLine(max);
 
 Console.WriteLine($"max number is {max}");
+*/
+
+// 3. Напишите программу, которая на вход принимает число и выдает, является ли число четным (делится ли оно на два без остатка)
+
+Console.Write("Input a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number %2 == 0)
+{
+     Console.WriteLine($"{number} is an even number");
+}
+else
+{
+    Console.WriteLine($"{number} is an odd number");
+}
