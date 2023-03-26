@@ -23,12 +23,11 @@ PrintNumber(number, count);
 
 int SumNumberFromMToN(int m, int n)
 {
-    if(m == n)
+    if(m > n)
     {
         return 0;
     }
-    m++;
-    return m + SumNumberFromMToN(m, n);
+    return m + SumNumberFromMToN(++m, n);
 }
 
 System.Console.Write("Input the number M: ");
@@ -36,7 +35,7 @@ int numberM = Convert.ToInt32(Console.ReadLine());
 System.Console.Write("Input the number N: ");
 int numberN = Convert.ToInt32(Console.ReadLine());
 SumNumberFromMToN(numberM, numberN);
-Console.Write(SumNumberFromMToN(numberM-1, numberN));
+Console.Write(SumNumberFromMToN(numberM, numberN));
 
 
 // Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
